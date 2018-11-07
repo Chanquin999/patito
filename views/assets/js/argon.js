@@ -1038,10 +1038,18 @@ var SalesChart = (function() {
 	}
 
 })();
+$(buscar_datos());
 function buscar_datos(consulta) {
 			$.ajax({
-				url: '../../../model/buscar_tabla.php'
-			}
-
-			)
+				url: '../../../model/buscar_tabla.php',
+				type: 'POST',
+				dataType: 'html',
+				data: {consulta: consulta},
+			})
+			.done(function(respuesta){
+				$("#datos").html(respuesta);
+			})
+			.fail(function(respuesta){
+				console.log("error");
+			})
 }
