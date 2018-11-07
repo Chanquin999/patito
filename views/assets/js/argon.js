@@ -932,7 +932,7 @@ var OrdersChart = (function() {
 							}
 
 							content += '<span class="popover-body-value">' + yLabel + '</span>';
-							
+
 							return content;
 						}
 					}
@@ -1038,3 +1038,10 @@ var SalesChart = (function() {
 	}
 
 })();
+function buscar_datos(consulta) {
+			$.ajax({
+				url: '../../../model/buscar_tabla.php'
+			}
+
+			)
+}
