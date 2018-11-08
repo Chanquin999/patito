@@ -1,3 +1,3 @@
 <?php
-$connection = mysqli_connect ("localhost", "root", "", "patito") or die ("Ya valio");
+$mysqli  = new mysqli("localhost", "root", "", "patito");
 ?>
