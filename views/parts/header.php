@@ -1,12 +1,6 @@
 <?php
-
-$link_escritorio = "http://localhost/patito/views/";
-$link_clientes = "http://localhost/patito/views/clientes.php";
-$link_facturas = "http://localhost/patito/views/facturas.php";
-$link_perfil = "http://localhost/patito/views/perfil.php";
 $logo_img = "assets/img/brand/logo.png";
 $link_logo = "http://localhost/patito/views";
-include ("../controller/connection-include.php");
 ?>
 <!-- Sidenav -->
 <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
@@ -25,7 +19,9 @@ include ("../controller/connection-include.php");
         <a class="nav-link" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="media align-items-center">
             <span class="avatar avatar-sm rounded-circle">
-              <img alt="Image placeholder" src="assets/img/theme/team-1-800x800.jpg">
+              <img alt="Image placeholder" src="<?php echo "$user_profile_img";
+
+              ?>">
             </span>
           </div>
         </a>
@@ -89,23 +85,23 @@ include ("../controller/connection-include.php");
       <!-- Navigation -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $link_escritorio; ?>">
+          <a class="nav-link" href="">
             <i class="ni ni-tv-2 text-primary"></i> Escritorio
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $link_clientes; ?>">
+          <a class="nav-link" href="">
             <i class="ni ni-satisfied text-blue"></i> Clientes
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $link_facturas; ?>">
+          <a class="nav-link" href="">
             <i class="ni ni-single-copy-04 text-orange"></i> Facturas
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $link_perfil; ?>">
-            <i class="ni ni-single-02 text-yellow"></i> Perfil
+          <a class="nav-link" href="">
+            <i class="ni ni-single-02 text-yellow"></i> Reportes
           </a>
         </li>
       </ul>
@@ -121,7 +117,7 @@ include ("../controller/connection-include.php");
   <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
     <div class="container-fluid">
       <!-- Brand -->
-      <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">Escritorio</a>
+      <h1 class="text-white d-none d-lg-inline-block">Bienvenido Señor Pato.</h1>
       <!-- Form -->
       <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
         <div class="form-group mb-0">

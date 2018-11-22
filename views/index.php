@@ -33,7 +33,7 @@ session_start();
   <!-- Escritorio -->
   <h1>- Escritorio</h1>
   <div class="escritorio">
-    <h1>Hola Señor Pato, el sistema patito fue creado para usted XD.</h1>
+
   </div>
   <!-- Clientes -->
   <h1>- Clientes</h1>
