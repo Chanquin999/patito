@@ -30,9 +30,39 @@ session_start();
   <?php
     require ("parts/header.php");
   ?>
-      <?php
-        require ("parts/footer.php");
-      ?>
+  <!-- Escritorio -->
+  <h1>- Escritorio</h1>
+  <div class="escritorio">
+    <h1>Hola Señor Pato, el sistema patito fue creado para usted XD.</h1>
+  </div>
+  <!-- Clientes -->
+  <h1>- Clientes</h1>
+  <div class="clientes">
+    <div class="">
+      <label for="caja_busqueda">Buscar:</label>
+      <input type="text" name="caja_busqueda" id="caja_busqueda">
+    </div>
+
+      <div id="datos">
+
+      </div>
+  </div>
+  <!-- Facturas -->
+  <h1>- Facturas</h1>
+  <div class="clientes">
+    <div class="">
+      <label for="caja_busqueda">Buscar:</label>
+      <input type="text" name="caja_busqueda" id="caja_busqueda">
+    </div>
+
+      <div id="datos">
+
+      </div>
+  </div>
+  <!-- Reportes -->
+  <?php
+    require ("parts/footer.php");
+  ?>
   <!-- Argon Scripts -->
   <!-- Core -->
   <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
