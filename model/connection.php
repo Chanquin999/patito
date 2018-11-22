@@ -1,3 +1,3 @@
 <?php
-$mysqli  = new mysqli("localhost", "root", "", "patito");
+$mysqli  = new mysqli("localhost", "root", "", "cablenetpatito");
 ?>

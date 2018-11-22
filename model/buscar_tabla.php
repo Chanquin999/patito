@@ -1,5 +1,5 @@
 <?php
-  $mysqli = new mysqli("localhost", "root", "", "patito");
+  $mysqli = new mysqli("localhost", "root", "", "cablenetpatito");
   $salida = "";
   $query = "SELECT * FROM clientes ORDER BY codigo LIMIT 20";
 
