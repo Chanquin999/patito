@@ -1038,6 +1038,7 @@ var SalesChart = (function() {
 	}
 
 })();
+
 $(buscar_datos());
 function buscar_datos(consulta) {
 			$.ajax({

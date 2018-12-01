@@ -15,6 +15,21 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+.titulo-pagina {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 25px;
+}
+.clientes {
+  padding: 10px;
+}
+.escritorio {
+  display: none;
+}
+.facturas {
+  display: none;
+}
 :root
 {
     --blue: #5e72e4;
@@ -298,7 +313,10 @@ svg
 
 table
 {
-    border-collapse: collapse;
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 caption

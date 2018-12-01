@@ -1,11 +1,5 @@
 <?php
-
 $user_profile_img = "./assets/img/theme/team-4-800x800.jpg";
-session_start();
-/*if($_SESSION['nombre']=="Alejandro") {
-} else {
-  print '<script> window.location="../views/login.php";</script>';
-}*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,29 +25,28 @@ session_start();
     require ("parts/header.php");
   ?>
   <!-- Escritorio -->
-  <h1>- Escritorio</h1>
   <div class="escritorio">
+    <h1 class="titulo-pagina">Escritorio</h1>
+
 
   </div>
   <!-- Clientes -->
-  <h1>- Clientes</h1>
   <div class="clientes">
-    <div class="">
-      <label for="caja_busqueda">Buscar:</label>
-      <input type="text" name="caja_busqueda" id="caja_busqueda">
-    </div>
+    <h1 class="titulo-pagina" >Clientes</h1>
+        <label for="caja_busqueda">Buscar:</label>
+        <input type="text" name="caja_busqueda" id="caja_busqueda">
 
       <div id="datos">
 
       </div>
   </div>
   <!-- Facturas -->
-  <h1>- Facturas</h1>
-  <div class="clientes">
-    <div class="">
-      <label for="caja_busqueda">Buscar:</label>
-      <input type="text" name="caja_busqueda" id="caja_busqueda">
-    </div>
+  <div class="facturas">
+    <h1 class="titulo-pagina" >Facturas</h1>
+      <div class="">
+        <label for="caja_busqueda">Buscar:</label>
+        <input type="text" name="caja_busqueda" id="caja_busqueda">
+      </div>
 
       <div id="datos">
 
