@@ -24,6 +24,7 @@ $user_profile_img = "./assets/img/theme/team-4-800x800.jpg";
   <?php
     require ("parts/header.php");
   ?>
+  <div class="contenedor">
   <!-- Escritorio -->
   <div class="escritorio">
     <h1 class="titulo-pagina">Escritorio</h1>
@@ -33,8 +34,7 @@ $user_profile_img = "./assets/img/theme/team-4-800x800.jpg";
   <!-- Clientes -->
   <div class="clientes">
     <h1 class="titulo-pagina" >Clientes</h1>
-        <label for="caja_busqueda">Buscar:</label>
-        <input type="text" name="caja_busqueda" id="caja_busqueda">
+        <input type="text" name="caja_busqueda" id="caja_busqueda" placeholder="Buscar">
 
       <div id="datos">
 
@@ -44,15 +44,15 @@ $user_profile_img = "./assets/img/theme/team-4-800x800.jpg";
   <div class="facturas">
     <h1 class="titulo-pagina" >Facturas</h1>
       <div class="">
-        <label for="caja_busqueda">Buscar:</label>
-        <input type="text" name="caja_busqueda" id="caja_busqueda">
+        <input type="text" name="caja_busqueda" id="caja_busqueda_facturas" placeholder="Buscar">
       </div>
 
-      <div id="datos">
+      <div id="datos_factura">
 
       </div>
   </div>
   <!-- Reportes -->
+  </div>
   <?php
     require ("parts/footer.php");
   ?>

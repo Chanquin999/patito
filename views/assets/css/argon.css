@@ -21,14 +21,17 @@
   text-decoration: underline;
   padding: 25px;
 }
+.contenedor{
+    padding: 25px;
+}
 .clientes {
-  padding: 10px;
+
 }
 .escritorio {
-  display: none;
+ 
 }
 .facturas {
-  display: none;
+ 
 }
 :root
 {

@@ -1063,3 +1063,29 @@ $(document).on('keyup', '#caja_busqueda', function(){
 		buscar_datos();
 	}
 });
+
+$(buscar_datos_factura());
+function buscar_datos_factura(consulta) {
+			$.ajax({
+				url: 'http://localhost/patito/model/buscar_facturas.php',
+				type: 'POST',
+				dataType: 'html',
+				data: {consulta: consulta},
+			})
+			.done(function(respuesta){
+				$("#datos_factura").html(respuesta);
+			})
+			.fail(function(respuesta){
+				console.log("error");
+			})
+}
+
+$(document).on('keyup', '#caja_busqueda_facturas', function(){
+	var valor = $(this).val();
+	if (valor != "") {
+		buscar_datos_factura(valor);
+	} else {
+		buscar_datos_factura();
+	}
+});
+

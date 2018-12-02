@@ -1,11 +1,11 @@
 <?php
   $mysqli = new mysqli("localhost", "root", "", "cablenetpatito");
   $salida = "";
-  $query = "SELECT * FROM clientes ORDER BY codigo";
+  $query = "SELECT * FROM clientes ORDER BY codigo LIMIT 20";
 
   if (isset($_POST['consulta'])) {
     $q = $mysqli->real_escape_string($_POST['consulta']);
-    $query = "SELECT codigo, nombre, direccion, telefono, NIT, servicio FROM clientes WHERE nombre LIKE '%".$q."%' OR codigo LIKE '%".$q."%' OR NIT LIKE '%".$q."%'";
+    $query = "SELECT codigo, nombre, direccion, telefono, NIT, servicio FROM clientes WHERE nombre LIKE '%".$q."%' OR codigo LIKE '%".$q."%'";
   }
     $resultado = $mysqli->query($query);
 
