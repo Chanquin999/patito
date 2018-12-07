@@ -1,6 +1,3 @@
-<?php
-$user_profile_img = "./assets/img/theme/team-4-800x800.jpg";
-?>
 <!DOCTYPE html>
 <html>
 
@@ -25,61 +22,46 @@ $user_profile_img = "./assets/img/theme/team-4-800x800.jpg";
     require ("parts/header.php");
   ?>
   <div class="contenedor">
-  <!-- Escritorio -->
-  <a id="escritorio"></a>
-  <div class="escritorio">
-    <h1 class="titulo-pagina">Escritorio</h1>
-
-
-  </div>
   <!-- Clientes -->
-  <a id="clientes"></a>
   <div class="clientes">
-    <h1 class="titulo-pagina" >Clientes</h1>
-        <input type="text" name="caja_busqueda" id="caja_busqueda" placeholder="Buscar">
-
+    <h1 class="titulo-pagina izquiera" >Clientes</h1>
+    <div class="contenedor_peq izquiera">
+      <input type="text" name="caja_busqueda" id="caja_busqueda" placeholder="Buscar clientes" class="form-control">
+    </div>
+    <div class="contenedor_peq derecha">
+      <button class="btn btn-primary" type="button">Nuevo Cliente</button>
+    </div>
       <div id="datos">
 
       </div>
   </div>
   <!-- Facturas -->
-  <a id="facturas"></a>
-  <div class="facturas">
-    <h1 class="titulo-pagina" >Facturas</h1>
-      <div class="contenedor">
-        <input type="text" name="caja_busqueda" id="caja_busqueda_facturas" placeholder="Buscar">
+  <div class="facturas desactivado">
+    <h1 class="titulo-pagina izquiera" >Facturas</h1>
+      <div class="contenedor_peq izquiera">
+        <input type="text" name="caja_busqueda" id="caja_busqueda_facturas" placeholder="Buscar facturas" class="form-control">
       </div>
-
+      <div class="contenedor_peq derecha">
+        <button class="btn btn-primary" type="button">Nueva Factura</button>
+      </div>
       <div id="datos_factura">
 
       </div>
   </div>
   <!-- Reportes -->
-  <a id="reportes"></a>
-    <div class="reportes">
+    <div class="reportes desactivado">
       <h1 class="titulo-pagina" >Reportes</h1>
     </div>
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Optional JS -->
-  <script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <!-- Argon JS -->
-  <script src="./assets/js/argon.js"></script>
-
-  <?php
-  $a = 5;
-  $b = 10;
-  $as = $a--;
-  $sd = ++$b;
-  $asd = $as + $sd;
-  echo $asd;
- ?>
-
-
+  <script src="assets/js/argon.js"></script>
 
 </body>
 

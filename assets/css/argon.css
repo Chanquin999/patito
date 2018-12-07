@@ -15,23 +15,30 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+.contenedor_peq {
+  width: auto ;
+  margin: 0px 100px;
+}
 .titulo-pagina {
   font-size: 36px;
   text-transform: uppercase;
   text-decoration: underline;
-  padding: 25px;
+  width: auto;
 }
-.contenedor{
+.izquiera {
+  float: left;
+}
+.derecha {
+  float: right;
+}
+.contenedor {
     padding: 25px;
 }
-.clientes {
-
+.desactivado {
+  display: none;
 }
-.escritorio {
- 
-}
-.facturas {
- 
+.activo {
+  display: inherit;
 }
 :root
 {
@@ -316,6 +323,7 @@ svg
 
 table
 {
+  padding: 50px 0px;
   width: 100px;
   height: 300px;
   overflow-y: auto;

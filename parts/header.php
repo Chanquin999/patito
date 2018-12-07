@@ -25,32 +25,6 @@ $link_logo = "http://localhost/patito/views";
             </span>
           </div>
         </a>
-        <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-          <div class=" dropdown-header noti-title">
-            <h6 class="text-overflow m-0">¡Bienvenido!</h6>
-          </div>
-          <a href="./examples/profile.html" class="dropdown-item">
-            <i class="ni ni-single-02"></i>
-            <span>Mi Perfil</span>
-          </a>
-          <a href="./examples/profile.html" class="dropdown-item">
-            <i class="ni ni-settings-gear-65"></i>
-            <span>Ajustes</span>
-          </a>
-          <a href="./examples/profile.html" class="dropdown-item">
-            <i class="ni ni-calendar-grid-58"></i>
-            <span>Actividad</span>
-          </a>
-          <a href="./examples/profile.html" class="dropdown-item">
-            <i class="ni ni-support-16"></i>
-            <span>Soporte</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="http://localhost/patito/model/validar-sesion.php" class="dropdown-item">
-            <i class="ni ni-user-run"></i>
-            <span>Cerrar Sesión</span>
-          </a>
-        </div>
       </li>
     </ul>
     <!-- Collapse -->
@@ -84,11 +58,6 @@ $link_logo = "http://localhost/patito/views";
       </form>
       <!-- Navigation -->
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#escritorio">
-            <i class="ni ni-tv-2 text-primary"></i> Escritorio
-          </a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="#clientes">
             <i class="ni ni-satisfied text-blue"></i> Clientes

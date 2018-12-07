@@ -1,6 +1,3 @@
-<?php
-include ("../controller/connection-include.php");
-?>
 <!DOCTYPE html>
 <html>
 
@@ -27,7 +24,7 @@ include ("../controller/connection-include.php");
     <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
       <div class="container px-4">
         <a class="navbar-brand" href="../index.html">
-          <img src="./assets/img/brand/logo-blanco.png" class="navbar-brand-img" alt="...">
+          <img src="assets/img/brand/logo-blanco.png" class="navbar-brand-img" alt="...">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,7 +35,7 @@ include ("../controller/connection-include.php");
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="index.html">
-                  <img src="./assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+                  <img src="assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
                 </a>
               </div>
               <div class="col-6 collapse-close">

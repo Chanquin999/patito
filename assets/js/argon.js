@@ -1042,7 +1042,7 @@ var SalesChart = (function() {
 $(buscar_datos());
 function buscar_datos(consulta) {
 			$.ajax({
-				url: 'http://localhost/patito/model/buscar_tabla.php',
+				url: 'http://localhost/patito/buscar_tabla.php',
 				type: 'POST',
 				dataType: 'html',
 				data: {consulta: consulta},
@@ -1067,7 +1067,7 @@ $(document).on('keyup', '#caja_busqueda', function(){
 $(buscar_datos_factura());
 function buscar_datos_factura(consulta) {
 			$.ajax({
-				url: 'http://localhost/patito/model/buscar_facturas.php',
+				url: 'http://localhost/patito/buscar_facturas.php',
 				type: 'POST',
 				dataType: 'html',
 				data: {consulta: consulta},
@@ -1088,4 +1088,3 @@ $(document).on('keyup', '#caja_busqueda_facturas', function(){
 		buscar_datos_factura();
 	}
 });
-
