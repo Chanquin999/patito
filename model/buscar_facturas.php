@@ -11,7 +11,7 @@
 
 
     if($resultado->num_rows > 0){
-      $salida.="<table class='table align-items-center table-flush'>
+      $salida.="<table class='table'>
                 <thead>
                   <tr>
                     <td>Código</td>
@@ -30,7 +30,7 @@
                               <td>" . $fila['monto'] . "</td>
                               <td>" . $fila['fecha'] . "</td>
                              </tr>";
-                
+
                 }
                 $salida.="</tbody></table>";
 

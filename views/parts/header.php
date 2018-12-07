@@ -85,26 +85,29 @@ $link_logo = "http://localhost/patito/views";
       <!-- Navigation -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="#escritorio">
             <i class="ni ni-tv-2 text-primary"></i> Escritorio
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="#clientes">
             <i class="ni ni-satisfied text-blue"></i> Clientes
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="#facturas">
             <i class="ni ni-single-copy-04 text-orange"></i> Facturas
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="#reportes">
             <i class="ni ni-single-02 text-yellow"></i> Reportes
           </a>
         </li>
       </ul>
+      <div class="copyright text-center text-xl-left text-muted">
+        &copy; 2018 <a href="https://villanegocio.com" class="font-weight-bold ml-1" target="_blank">JAVA Consultores</a>
+      </div>
       <!-- Divider -->
       <hr class="my-3">
       <!-- Navigation -->
