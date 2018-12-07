@@ -40,8 +40,8 @@
                               <td>" . $fila['telefono'] . "</td>
                               <td>" . $fila['NIT'] . "</td>
                               $servicio
-                              <td><a href='http://localhost/patito/views/clientes.php?editar=". $fila['codigo'] . "'>Editar</a></td>
-                              <td><a href='http://localhost/patito/views/clientes.php?borrar=". $fila['codigo'] . "'>Borrar</a></td>
+                              <td><a href='http://localhost/phpmyadmin/sql.php?db=cablenetpatito&goto=db_structure.php&table=clientes&pos=0'>Editar</a></td>
+                              <td><a href='?". $fila['codigo'] . "'>Borrar</a></td>
                             </tr>";
                 }
 
