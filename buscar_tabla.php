@@ -21,7 +21,7 @@
                     <td>NIT</td>
                     <td>Servicio</td>
                     <td>Editar</td>
-                    <td>Borrar</td>
+                    <!--<td>Borrar</td>-->
                   </tr>
                 </thead>
                 <tbody>";
@@ -41,7 +41,10 @@
                               <td>" . $fila['NIT'] . "</td>
                               $servicio
                               <td><a href='http://localhost/phpmyadmin/sql.php?db=cablenetpatito&goto=db_structure.php&table=clientes&pos=0'>Editar</a></td>
-                              <td><a href='?". $fila['codigo'] . "'>Borrar</a></td>
+                              <!--<td><form class='' action='borrar-clientes.php' method='POST'>
+                              <input type='hidden' name='id' value='" . $fila['codigo'] . "'>
+                              <input type='submit' name='' value='Borrar'>
+                              </form></td>-->
                             </tr>";
                 }
 

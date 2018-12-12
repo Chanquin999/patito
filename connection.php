@@ -1,3 +1,3 @@
 <?php
-$mysqli  = new mysqli("localhost", "root", "", "cablenetpatito");
+$con  = mysqli_connect("localhost", "root", "", "cablenetpatito") or die ("Se Carlitos");
 ?>
