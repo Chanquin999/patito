@@ -1,6 +1,6 @@
 <?php
 $logo_img = "assets/img/brand/logo.png";
-$link_logo = "http://localhost/patito/views";
+$link_logo = "http://localhost/patito/";
 ?>
 <!-- Sidenav -->
 <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
@@ -59,23 +59,18 @@ $link_logo = "http://localhost/patito/views";
       <!-- Navigation -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#clientes">
-            <i class="ni ni-satisfied text-blue"></i> Clientes
-          </a>
+          <input type="button" name="" value="">
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#facturas">
-            <i class="ni ni-single-copy-04 text-orange"></i> Facturas
-          </a>
+          <input type="button" name="" value="">
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#reportes">
-            <i class="ni ni-single-02 text-yellow"></i> Reportes
-          </a>
+          <input type="button" name="" value="">
         </li>
       </ul>
       <div class="copyright text-center text-xl-left text-muted">
-        &copy; 2018 <a href="https://villanegocio.com" class="font-weight-bold ml-1" target="_blank">JAVA Consultores</a>
+        &copy; 2018 <a href="https://soychanq.com" class="font-weight-bold ml-1" target="_blank">JAVA Consultores</a>
       </div>
       <!-- Divider -->
       <hr class="my-3">
@@ -96,3 +91,11 @@ $link_logo = "http://localhost/patito/views";
   <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
 
   </div>
+  <script type="text/javascript">
+  var mc = document.getElementById('menuC')
+  var mf = document.getElementById('menuF')
+  var mr = document.getElementById('menuR').
+    if () {
+
+    }
+  </script>

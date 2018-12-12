@@ -23,7 +23,7 @@
   ?>
   <div class="contenedor">
   <!-- Clientes -->
-  <div class="clientes">
+  <div id="clientes" class="activo">
     <h1 class="titulo-pagina izquiera" >Clientes</h1>
     <div class="contenedor_peq izquiera">
       <input type="text" name="caja_busqueda" id="caja_busqueda" placeholder="Buscar clientes" class="form-control">
@@ -55,7 +55,7 @@
   </div>
 </div>
   <!-- Facturas -->
-  <div class="facturas desactivado">
+  <div id="facturas" class="desactivado">
     <h1 class="titulo-pagina izquiera" >Facturas</h1>
       <div class="contenedor_peq izquiera">
         <input type="text" name="caja_busqueda" id="caja_busqueda_facturas" placeholder="Buscar facturas" class="form-control">
@@ -68,7 +68,7 @@
       </div>
   </div>
   <!-- Reportes -->
-    <div class="reportes desactivado">
+    <div id="reportes" class="desactivado">
       <h1 class="titulo-pagina" >Reportes</h1>
     </div>
   </div>
@@ -81,6 +81,10 @@
   <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <!-- Argon JS -->
   <script src="assets/js/argon.js"></script>
+
+  <script type="text/javascript">
+      
+  </script>
 
 
 </body>

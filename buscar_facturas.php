@@ -1,7 +1,7 @@
 <?php
   $mysqli = new mysqli("localhost", "root", "", "cablenetpatito");
   $salida = "";
-  $query = "SELECT * FROM facturacion ORDER BY numero LIMIT 20";
+  $query = "SELECT * FROM facturacion ORDER BY numero";
 
   if (isset($_POST['consulta'])) {
     $q = $mysqli->real_escape_string($_POST['consulta']);
