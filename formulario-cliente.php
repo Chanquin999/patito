@@ -50,11 +50,11 @@ if (isset($_POST['guardar'])) {
   $sql = "INSERT INTO clientes (nombre, direccion, telefono, NIT, servicio) VALUES ('$nombre_cliente', '$direccion_cliente', '$telefono_cliente', '$nit_cliente', '$servicio_cliente')";
 
   if (mysqli_query($con, $sql)) {
-      echo "New record created successfully";
+
 } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($con);
 }
-mysqli_close($con);
+        mysqli_close($con);
 
 } else {
 
