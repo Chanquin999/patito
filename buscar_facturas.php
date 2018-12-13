@@ -14,11 +14,12 @@
       $salida.="<table class='table'>
                 <thead>
                   <tr>
-                    <td>Código</td>
-                    <td>Nombre</td>
-                    <td>Dirección</td>
-                    <td>Teléfono</td>
-                    <td>NIT</td>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>NIT</th>
+                    <th>Editar</th>
                   </tr>
                 </thead>
                 <tbody>";
@@ -29,6 +30,7 @@
                               <td>" . $fila['codigoservicio'] . "</td>
                               <td>" . $fila['monto'] . "</td>
                               <td>" . $fila['fecha'] . "</td>
+                              <td>Editar</td>
                              </tr>";
 
                 }

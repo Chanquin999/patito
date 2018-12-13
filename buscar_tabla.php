@@ -14,14 +14,13 @@
       $salida.="<table class='table'>
                 <thead>
                   <tr>
-                    <td>Código</td>
-                    <td>Nombre</td>
-                    <td>Dirección</td>
-                    <td>Teléfono</td>
-                    <td>NIT</td>
-                    <td>Servicio</td>
-                    <td>Editar</td>
-                    <!--<td>Borrar</td>-->
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>NIT</th>
+                    <th>Servicio</th>
+                    <th>Editar</th>
                   </tr>
                 </thead>
                 <tbody>";
@@ -41,10 +40,6 @@
                               <td>" . $fila['NIT'] . "</td>
                               $servicio
                               <td><a href='http://localhost/phpmyadmin/sql.php?db=cablenetpatito&goto=db_structure.php&table=clientes&pos=0'>Editar</a></td>
-                              <!--<td><form class='' action='borrar-clientes.php' method='POST'>
-                              <input type='hidden' name='id' value='" . $fila['codigo'] . "'>
-                              <input type='submit' name='' value='Borrar'>
-                              </form></td>-->
                             </tr>";
                 }
 
