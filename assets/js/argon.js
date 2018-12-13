@@ -1064,6 +1064,7 @@ $(document).on('keyup', '#caja_busqueda', function(){
 	}
 });
 
+
 $(buscar_datos_factura());
 function buscar_datos_factura(consulta) {
 			$.ajax({
@@ -1088,3 +1089,7 @@ $(document).on('keyup', '#caja_busqueda_facturas', function(){
 		buscar_datos_factura();
 	}
 });
+
+function editar(){
+	element.removeAttribute(disabled);
+}

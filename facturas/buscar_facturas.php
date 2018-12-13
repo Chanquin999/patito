@@ -9,7 +9,7 @@
   }
     $resultado = $mysqli->query($query);
 
-
+    
     if($resultado->num_rows > 0){
       $salida.="<table class='table'>
                 <thead>
@@ -17,17 +17,20 @@
                     <th>Código</th>
                     <th>Nombre</th>
                     <th>Dirección</th>
-                    <th>Teléfono</th>
-                    <th>NIT</th>
+                    <th>Monto</th>
+                    <th>Fecha</th>
                     <th>Editar</th>
                   </tr>
                 </thead>
                 <tbody>";
                 while($fila = $resultado->fetch_assoc()){
+                  $queryClientes = "SELECT * FROM clientes WHERE codigo= " . $fila['codigocliente'];
+                  $resultadoNombre = $mysqli->query($queryClientes);
+                  $filas = $resultadoNombre->fetch_assoc();
                   $salida.="<tr>
-                              <td>". $fila['numero'] . "</td>
-                              <td>" . $fila['codigocliente'] . "</td>
-                              <td>" . $fila['codigoservicio'] . "</td>
+                              <td>" . $fila['numero'] . "</td>
+                              <td>" . $filas['nombre'] . "</td>
+                              <td>" . $filas['direccion'] . "</td>
                               <td>" . $fila['monto'] . "</td>
                               <td>" . $fila['fecha'] . "</td>
                               <td>Editar</td>

@@ -1,5 +1,5 @@
 <?php
-$logo_img = "assets/img/brand/logo.png";
+$logo_img = "../assets/img/brand/logo.png";
 $link_logo = "http://localhost/patito/";
 ?>
 <!-- Sidenav -->
@@ -59,14 +59,19 @@ $link_logo = "http://localhost/patito/";
       <!-- Navigation -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <input type="button" name="" value="">
+          <a class="nav-link" href="http://localhost/patito/clientes">
+            <i class="ni ni-satisfied text-blue"></i> Clientes
+          </a>
         </li>
         <li class="nav-item">
-          <input type="button" name="" value="">
-
-        </li>
+          <a class="nav-link" href="http://localhost/patito/facturas">
+            <i class="ni ni-single-copy-04 text-orange"></i> Facturas
+          </a>
+         </li>
         <li class="nav-item">
-          <input type="button" name="" value="">
+          <a class="nav-link" href="http://localhost/patito/reportes">
+            <i class="ni ni-single-02 text-yellow"></i> Reportes
+          </a>
         </li>
       </ul>
       <div class="copyright text-center text-xl-left text-muted">
@@ -91,11 +96,3 @@ $link_logo = "http://localhost/patito/";
   <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
 
   </div>
-  <script type="text/javascript">
-  var mc = document.getElementById('menuC')
-  var mf = document.getElementById('menuF')
-  var mr = document.getElementById('menuR').
-    if () {
-
-    }
-  </script>
