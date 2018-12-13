@@ -34,13 +34,13 @@ $q = $mysqli->real_escape_string($_POST['consulta']);
                     $servicio = 'Cable e Internet';
                   }
                   $salida.="<tr>
-                              <td><input ondblclick='editar()' type='text' class='form-control form-control-alternative' disabled value='". $fila['codigo'] . "'></td>
+                              <td><input id='editar_campo' type='text' class='form-control form-control-alternative' disabled value='". $fila['codigo'] . "'></td>
                               <td><input type='text' class='form-control form-control-alternative' disabled value='" . $fila['nombre'] . "'></td>
                               <td><input type='text' class='form-control form-control-alternative' disabled value='" . $fila['direccion'] . "'></td>
                               <td><input type='text' class='form-control form-control-alternative' disabled value='" . $fila['telefono'] . "'></td>
                               <td><input type='text' class='form-control form-control-alternative' disabled value='" . $fila['NIT'] . "'></td>
                               <td><input type='text' class='form-control form-control-alternative' disabled value='" . $servicio . "'></td>
-                              <td><button disabled type='button' class='btn btn-primary' data-toggle='modal' data-target='#Editar'>Editar</button></td>
+                              <td><button onclick='editar()' type='button' class='btn btn-primary' data-toggle='modal' data-target='#Editar'>Editar</button></td>
                               <td><button type='button' class='btn btn-default' data-target='#Facturar'>Facturar</button></td>
                             </tr>";
                 }

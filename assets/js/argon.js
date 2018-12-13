@@ -1091,5 +1091,5 @@ $(document).on('keyup', '#caja_busqueda_facturas', function(){
 });
 
 function editar(){
-	element.removeAttribute(disabled);
+	document.getElementById('editar_campo').element.removeAttribute(disabled);
 }
