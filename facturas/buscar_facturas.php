@@ -9,7 +9,7 @@
   }
     $resultado = $mysqli->query($query);
 
-    
+
     if($resultado->num_rows > 0){
       $salida.="<table class='table'>
                 <thead>
@@ -33,7 +33,7 @@
                               <td>" . $filas['direccion'] . "</td>
                               <td>" . $fila['monto'] . "</td>
                               <td>" . $fila['fecha'] . "</td>
-                              <td><button class='btn btn-default'value='".$fila['numero']."'>Imprimir</button></td>
+                              <td><button type='button' onclick=" . "reporte('factura')" ." class='btn btn-default'>Facturar</button></td>
                              </tr>";
 
                 }

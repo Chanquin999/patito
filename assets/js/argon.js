@@ -1088,17 +1088,17 @@ $(document).on('keyup', '#caja_busqueda_facturas', function(){
 });
 var codigo
 function editar(codigo){
-	document.getElementById("boton_".concat(codigo)).setAttribute('onclick', 'guardar('.concat(codigo).concat(')')); 
+	document.getElementById("boton_".concat(codigo)).setAttribute('onclick', 'guardar('.concat(codigo).concat(')'));
 	document.getElementById("boton_".concat(codigo)).setAttribute("value", "Guardar");
 	document.getElementById("editar_codigo_".concat(codigo)).removeAttribute("disabled");
-	document.getElementById("editar_codigo_".concat(codigo)).setAttribute("readonly", "true"); 
-	document.getElementById("editar_nombre_".concat(codigo)).removeAttribute("disabled"); 
-	document.getElementById("editar_direccion_".concat(codigo)).removeAttribute("disabled"); 
-	document.getElementById("editar_telefono_".concat(codigo)).removeAttribute("disabled"); 
-	document.getElementById("editar_nit_".concat(codigo)).removeAttribute("disabled"); 
+	document.getElementById("editar_codigo_".concat(codigo)).setAttribute("readonly", "true");
+	document.getElementById("editar_nombre_".concat(codigo)).removeAttribute("disabled");
+	document.getElementById("editar_direccion_".concat(codigo)).removeAttribute("disabled");
+	document.getElementById("editar_telefono_".concat(codigo)).removeAttribute("disabled");
+	document.getElementById("editar_nit_".concat(codigo)).removeAttribute("disabled");
 	document.getElementById("editar_servicio_".concat(codigo)).removeAttribute("disabled");
 	document.getElementById("formEditar").setAttribute("action", "editar-clientes.php");
-	
+
 }
 function guardar(codigo){
 	document.getElementById("boton_".concat(codigo)).setAttribute('type', 'submit');
@@ -1128,5 +1128,7 @@ function reporte(valor) {
 	if (valor == 'facturas') {
 		window.open("http://localhost/patito/reportes/reportes/facturacion.pdf")
 	}
+	if (valor == 'factura') {
+		window.open("http://localhost/patito/facturas/101-alejandro-chanquin.pdf")
+	}
 }
-

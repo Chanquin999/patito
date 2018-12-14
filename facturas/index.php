@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['usuario'] == 'Super Pato') {  
+if ($_SESSION['usuario'] == 'Don Pato') {  
 } else {
   echo "
         <script type='text/javascript'>
@@ -45,7 +45,7 @@ if ($_SESSION['usuario'] == 'Super Pato') {
   <!DOCTYPE html>
 <html>
 </div>
-  
+
   <!-- Argon Scripts -->
   <!-- Core -->
   <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
@@ -57,7 +57,7 @@ if ($_SESSION['usuario'] == 'Super Pato') {
   <script src="../assets/js/argon.js"></script>
 
   <script type="../text/javascript">
-      
+
   </script>
 
 

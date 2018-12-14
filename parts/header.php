@@ -94,7 +94,7 @@ $link_logo = "http://localhost/patito/";
   <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
     <div class="container-fluid">
       <!-- Brand -->
-      <h1 class="text-white d-none d-lg-inline-block">Bienvenido Super Pato.</h1>
+      <h1 class="text-white d-none d-lg-inline-block">Bienvenido Don Pato.</h1>
     </div>
   </nav>
   <!-- Header -->

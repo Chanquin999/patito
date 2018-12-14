@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['usuario'] == 'Super Pato') {  
+if ($_SESSION['usuario'] == 'Don Pato') {  
 } else {
   echo "
         <script type='text/javascript'>
