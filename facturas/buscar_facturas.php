@@ -33,7 +33,7 @@
                               <td>" . $filas['direccion'] . "</td>
                               <td>" . $fila['monto'] . "</td>
                               <td>" . $fila['fecha'] . "</td>
-                              <td>Editar</td>
+                              <td><button class='btn btn-default'>Imprimir</button></td>
                              </tr>";
 
                 }

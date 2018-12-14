@@ -45,9 +45,90 @@
         </button>
       </div>
       <div class="modal-body">
-        <?php
-        include ('formulario-cliente.php');
-        ?>
+      <form method="post" action="formulario-cliente.php">
+<div class="row">
+<div class="col-md-6">
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="nombre_cliente" placeholder="Nombre" required>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="direccion_cliente" placeholder="Dirección" required>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+  <div class="form-group">
+    <input type="tel" class="form-control" id="exampleFormControlInput1" name="telefono_cliente" placeholder="Teléfono" required>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-group">
+    <input type="number" class="form-control" id="exampleFormControlInput1" name="nit_cliente" placeholder="NIT" required>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+  <div class="form-group">
+    <select class="form-control" id="exampleFormControlInput1" name="servicio_cliente" required>
+      <option value="1">Cable</option>
+      <option value="2">Internet</option>
+      <option value="3">Cable e Internet</option>
+    </select>
+  </div>
+</div>
+</div>
+<input class="btn btn-primary" type="submit" value="Guardar" name="guardar">
+<input class="btn btn-primary" type="button" value="Cerrar" data-dismiss="modal" name="cerrar">
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="nuevaFactura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva Factura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form method="post" action="crear_factura.php">
+          <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="input1" name="codigo_cliente" placeholder="Código Cliente" required readonly >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="date" class="form-control" id="input2" name="fecha_factura" placeholder="Fecha" required>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="input3" name="servicio_factura" placeholder="Servicio" required readonly title='Cable: 1, Internet: 2, Cable e Internet: 3'>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="number" class="form-control" id="input4" name="monto_factura" placeholder="Monto" required readonly>
+            </div>
+          </div>
+          </div>
+
+          <input class="btn btn-primary" type="submit" value="Guardar" name="guardar">
+          <input class="btn btn-primary" type="button" value="Cerrar" data-dismiss="modal" name="cerrar">
+          </form>
       </div>
     </div>
   </div>

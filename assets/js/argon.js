@@ -1076,9 +1076,6 @@ function buscar_datos_factura(consulta) {
 			.done(function(respuesta){
 				$("#datos_factura").html(respuesta);
 			})
-			.fail(function(respuesta){
-				console.log("error");
-			})
 }
 
 $(document).on('keyup', '#caja_busqueda_facturas', function(){
@@ -1089,7 +1086,39 @@ $(document).on('keyup', '#caja_busqueda_facturas', function(){
 		buscar_datos_factura();
 	}
 });
-
-function editar(){
-	document.getElementById('editar_campo').element.removeAttribute(disabled);
+var codigo
+function editar(codigo){
+	document.getElementById("boton_".concat(codigo)).setAttribute('onclick', 'guardar('.concat(codigo).concat(')')); 
+	document.getElementById("boton_".concat(codigo)).setAttribute("value", "Guardar");
+	document.getElementById("editar_codigo_".concat(codigo)).removeAttribute("disabled");
+	document.getElementById("editar_codigo_".concat(codigo)).setAttribute("readonly", "true"); 
+	document.getElementById("editar_nombre_".concat(codigo)).removeAttribute("disabled"); 
+	document.getElementById("editar_direccion_".concat(codigo)).removeAttribute("disabled"); 
+	document.getElementById("editar_telefono_".concat(codigo)).removeAttribute("disabled"); 
+	document.getElementById("editar_nit_".concat(codigo)).removeAttribute("disabled"); 
+	document.getElementById("editar_servicio_".concat(codigo)).removeAttribute("disabled");
+	document.getElementById("formEditar").setAttribute("action", "editar-clientes.php");
+	
 }
+function guardar(codigo){
+	document.getElementById("boton_".concat(codigo)).setAttribute('type', 'submit');
+}
+
+function poner(codigo){
+	var porId=document.getElementById("editar_servicio_".concat(codigo)).value;
+	if (porId == 1) {
+		var valor = 100
+	}
+	if (porId == 2) {
+		var valor = 200
+	}
+	if (porId == 3) {
+		var valor = 250
+	}
+
+	document.getElementById("input1").setAttribute("value", "".concat(codigo));
+	document.getElementById("input3").setAttribute("value", "".concat(porId));
+	document.getElementById("input4").setAttribute("value", "".concat(valor));
+}
+
+

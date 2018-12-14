@@ -28,7 +28,6 @@
       <div id="datos_factura">
 
       </div>
-      <div class="modal fade" id="nuevaFactura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   </div>
 
   <!DOCTYPE html>
