@@ -73,6 +73,11 @@ $link_logo = "http://localhost/patito/";
             <i class="ni ni-single-02 text-yellow"></i> Reportes
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost/patito/cerrar_sesion.php">
+            <i class="ni ni-button-power"></i> Cerrar sesión
+          </a>
+        </li>
       </ul>
       <div class="copyright text-center text-xl-left text-muted">
         &copy; 2018 <a href="https://soychanq.com" class="font-weight-bold ml-1" target="_blank">JAVA Consultores</a>
@@ -89,7 +94,7 @@ $link_logo = "http://localhost/patito/";
   <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
     <div class="container-fluid">
       <!-- Brand -->
-      <h1 class="text-white d-none d-lg-inline-block">Bienvenido Señor Pato.</h1>
+      <h1 class="text-white d-none d-lg-inline-block">Bienvenido Super Pato.</h1>
     </div>
   </nav>
   <!-- Header -->

@@ -73,13 +73,13 @@
         <div class="col-lg-5 col-md-7">
           <div class="card bg-secondary shadow border-0">
             <div class="card-body px-lg-5 py-lg-5">
-              <form role="form" action="../model/sesiones.php" method="post">
+              <form role="form" action="sesiones.php" method="post">
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Usuario" type="text" name="nombre">
+                    <input class="form-control" placeholder="Usuario" type="text" name="usuario">
                   </div>
                 </div>
                 <div class="form-group">

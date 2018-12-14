@@ -1121,4 +1121,12 @@ function poner(codigo){
 	document.getElementById("input4").setAttribute("value", "".concat(valor));
 }
 
+function reporte(valor) {
+	if (valor == 'clientes') {
+		window.open("http://localhost/patito/reportes/reportes/clientes.pdf")
+	}
+	if (valor == 'facturas') {
+		window.open("http://localhost/patito/reportes/reportes/facturacion.pdf")
+	}
+}
 

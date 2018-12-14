@@ -1,3 +1,15 @@
+<?php
+session_start();
+if ($_SESSION['usuario'] == 'Super Pato') {  
+} else {
+  echo "
+        <script type='text/javascript'>
+        window.location='http://localhost/patito/login.php'
+        </script>
+        ";
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -25,6 +37,8 @@
         <!-- Reportes -->
         <div id="reportes">
         <h1 class="titulo-pagina" >Reportes</h1>
+        <button type="button" onclick="reporte('clientes')" class="btn btn-default izquierda">Reporte Clientes</button>
+        <button type="button" onclick="reporte('facturas')" class="btn btn-primary izquierda">Reporte Facturas</button>
         </div>
     </div>
   
