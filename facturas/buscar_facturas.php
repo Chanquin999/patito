@@ -19,7 +19,7 @@
                     <th>Dirección</th>
                     <th>Monto</th>
                     <th>Fecha</th>
-                    <th>Editar</th>
+                    <th>Facturar</th>
                   </tr>
                 </thead>
                 <tbody>";
@@ -33,7 +33,7 @@
                               <td>" . $filas['direccion'] . "</td>
                               <td>" . $fila['monto'] . "</td>
                               <td>" . $fila['fecha'] . "</td>
-                              <td><button type='button' onclick=" . "reporte('factura')" ." class='btn btn-default'>Facturar</button></td>
+                              <td><button type='button' onclick=" . "reporte('factura')" ." class='btn btn-default'>Imprimir</button></td>
                              </tr>";
 
                 }
